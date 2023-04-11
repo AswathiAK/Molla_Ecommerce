@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
 mongoose.set('strictQuery',true);
-mongoose.connect("mongodb://127.0.0.1:27017/eCommerce");
+mongoose.connect(process.env.MONGODB_LINK);
 
 const express = require("express");
 const session = require("express-session");
