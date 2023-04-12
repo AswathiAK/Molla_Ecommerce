@@ -50,7 +50,7 @@ const sendResetPasswordMail = async(name,email,token,next)=>{
       from:emailAdmin,
       to:email,
       subject:'For Reset Password',
-      html:'<p>Hi, '+name+' please click here to <a href="http://localhost:5000/resetpassword?token='+token+'"> Reset </a> Your Password</p>'
+      html:'<p>Hi, '+name+' please click here to <a href="http://mollacart.online/resetpassword?token='+token+'"> Reset </a> Your Password</p>'
     }
     transporter.sendMail(mailOptions,function(error,info){
       if(error){
