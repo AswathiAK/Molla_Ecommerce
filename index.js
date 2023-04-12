@@ -38,7 +38,7 @@ const {notFound,errorHandler} = require('./middleware/errorHandling');
 app.use('*',notFound);
 app.use(errorHandler);
 
-app.listen(5000, function () {
-  console.log("Server is running at PORT:5000");
+app.listen(3000, function () {
+  console.log("Server is running at PORT:3000");
 });
 
